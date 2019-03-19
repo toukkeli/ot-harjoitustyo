@@ -1,0 +1,115 @@
+commit 929bfc2cd9df54e6af1ea4c57b0ecaedef5fdfd6
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:19:03 2019 +0200
+
+    viimeinen askel harjoitusohjeissa
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7ead8c7cdb2d98fed55b94943801780528bd8c40
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:15:52 2019 +0200
+
+    Uusia filejä
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 6aad7ee36e681ccad82143c774b4ec24df0fcfa3
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:12:37 2019 +0200
+
+    vaihdeltu tekstien paikkaa
+
+ eka.txt    | 7 ++-----
+ kolmas.txt | 7 ++++++-
+ 2 files changed, 8 insertions(+), 6 deletions(-)
+
+commit 233f91b959a0ffd4c76cac88fc1c54160ef14a4d
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:11:34 2019 +0200
+
+    vaihdettu tiedostonimeä
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5dbd779bb66151f29a892c7756ca3cff0afebb39
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:10:10 2019 +0200
+
+    poistettu toinen.txt
+
+ toinen.txt | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit c426cea268b1db365293212c01907d2a3ddd4bbe
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:06:49 2019 +0200
+
+    muutettu tekstiä
+
+ tiedosto.txt | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit cd237556c525dedb5fa625ef0b94795f187c6b8c
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:06:00 2019 +0200
+
+    poistettu virhe-d ja lisätty paljon tekstiä
+
+ tiedosto.txt | 158 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 157 insertions(+), 1 deletion(-)
+
+commit 46f63230d14a91ff348f4ecbdc99412ebab24343
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:01:06 2019 +0200
+
+    lisätty kamaa
+
+ stuff/jokintiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1a2d1132a3e0d8e88f433d2fa0c84030a241c5ec
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 23:00:20 2019 +0200
+
+    Toinen ja kolmas saivat tekstin
+
+ kolmas.txt | 2 ++
+ toinen.txt | 2 ++
+ 2 files changed, 4 insertions(+)
+
+commit edc01fe5ffbcb220a03836a69e2f23e3067d32ee
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 22:59:13 2019 +0200
+
+    Kolmas.txt lisätty
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 83023982c3ea298df3c50079f6c226adf57e2b88
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 22:58:09 2019 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 2 ++
+ toinen.txt   | 0
+ 2 files changed, 2 insertions(+)
+
+commit 29b06aadcb56ea5245651bb333fcd7857a9a0e86
+Author: Touko Hanhijoki <touko.hanhijoki@helsinki.fi>
+Date:   Tue Mar 19 22:55:46 2019 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+

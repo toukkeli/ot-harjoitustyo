@@ -1,5 +1,11 @@
-# Ohjeet
+# Roguelike
 
-Tämä on **harjoitusteksti.** Tulevaisuudessa täällä tulee lukemaan hyödyllisiä asioita.
+Tämä on ohjelmistotekniikka-kurssin harjoitustyö keväälle 2019.
 
-Repositorioon tulee myös aivan loistava harjoitustyö. *Kuinka* *loistavaa*
+Harjoitustyön aiheena on yksinkertainen Roguelike-peli. Projekti toteutetaan Javalla.
+
+## Dokumentaatio
+
+[Vaatimusmäärittely](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Työtuntikirjanpito](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)

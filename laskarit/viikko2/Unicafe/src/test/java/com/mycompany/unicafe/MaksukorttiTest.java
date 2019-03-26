@@ -20,7 +20,7 @@ public class MaksukorttiTest {
     
     @Test
     public void kortinSaldoOnAlussaOikein() {
-        assertEquals("saldo: 0.10", kortti.toString());     
+        assertEquals(10, kortti.saldo());     
     }
     
     @Test
@@ -31,8 +31,8 @@ public class MaksukorttiTest {
     
     @Test
     public void saldoVaheneeOikeinJosRahaaOnTarpeeksi() {
-        kortti.otaRahaa(5);
-        assertEquals("saldo: 0.05", kortti.toString());      
+        kortti.otaRahaa(10);
+        assertEquals("saldo: 0.0", kortti.toString());      
     }
     
     @Test

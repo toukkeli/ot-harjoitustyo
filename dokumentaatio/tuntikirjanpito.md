@@ -2,6 +2,7 @@
 
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
-| 19.3. | 2    | Viikon 1 laskarit |
-| 26.3. | 5    | Viikon 2 laskarit, Harjoitustyön vaatimusmäärittely ja tuntikirjanpidon aloitus |
-| yht   | 7   | | 
+| 26.3. | 4    | Viikon 2 Harjoitustyön vaatimusmäärittely ja tuntikirjanpidon aloitus |
+| 2.4   | 2    | Projektin runko |
+| 9.4   | 5    | Osa viikon 4 tavoitteista |
+| yht   | 11    |  | 

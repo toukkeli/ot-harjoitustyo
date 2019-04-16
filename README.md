@@ -8,4 +8,6 @@ Harjoitustyön aiheena on yksinkertainen Roguelike-peli. Projekti toteutetaan Jav
 
 [Vaatimusmäärittely](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
+[Arkkitehtuurikuvaus](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
+
 [Työtuntikirjanpito](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)

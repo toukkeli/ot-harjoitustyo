@@ -1,0 +1,1 @@
+<img src="https://raw.githubusercontent.com/toukkeli/ot-harjoitustyo/master/dokumentaatio/kuvat/sekvenssikaavio1" width="400">

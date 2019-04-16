@@ -3,22 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package roguelike.ui;
+package fi.roguelike.ui;
 
-import roguelike.domain.Game;
+import fi.roguelike.Game;
 
 /**
  *
  * @author toukk
  */
-public class App {
+public class MainProgram {
 
-    
-    public static void main(String [] args){
+    public static void main(String[] args) {
         Game game = new Game();
         Textapp app = new Textapp(game);
-        
-        game.getMap().setCharacter(3, 3, game.getPlayer());
-        app.drawMap();
+
+        app.start();
     }
 }

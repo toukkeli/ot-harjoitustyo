@@ -1,13 +1,47 @@
 # Roguelike
 
-T‰m‰ on ohjelmistotekniikka-kurssin harjoitustyˆ kev‰‰lle 2019.
+T√§m√§ on ohjelmistotekniikka-kurssin harjoitusty√∂ kev√§√§lle 2019.
 
-Harjoitustyˆn aiheena on yksinkertainen Roguelike-peli. Projekti toteutetaan Javalla.
+Harjoitusty√∂n aiheena on yksinkertainen Roguelike-peli. Projekti toteutetaan Javalla.
 
 ## Dokumentaatio
 
-[Vaatimusm‰‰rittely](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[K√§ytt√∂ohje](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+[Vaatimusm√§√§rittely](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Arkkitehtuurikuvaus](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
 
-[Tyˆtuntikirjanpito](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+[Ty√∂tuntikirjanpito](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+## Releaset
+
+[Viikko 5](https://github.com/toukkeli/ot-harjoitustyo/releases/tag/viikko5)
+
+## Komentorivitoiminnot
+
+### Testaus
+
+Testit suoritetaan komennolla
+
+```
+mvn test
+```
+
+Testikattavuusraportti luodaan komennolla
+
+```
+mvn jacoco:report
+```
+
+Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/jacoco/index.html_
+
+### Suoritettavan jarin generointi
+
+Komento
+
+```
+mvn package
+```
+
+generoi hakemistoon _target_ suoritettavan jar-tiedoston _roguelike-1.0-SNAPSHOT.jar_

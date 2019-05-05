@@ -3,20 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fi.roguelike;
+package game;
 
+import fi.roguelike.game.Action;
+import fi.roguelike.game.Game;
 import fi.roguelike.character.Enemy;
-import org.hamcrest.Description;
-import org.hamcrest.TypeSafeMatcher;
 import fi.roguelike.character.Player;
 import fi.roguelike.character.behavior.AggressiveBehavior;
 import fi.roguelike.map.Map;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -34,7 +31,7 @@ public class GameTest {
     @Before
     public void setUp() {
         game = new Game();
-        Map map = new Map(game, 10, 10, 0);
+        Map map = new Map(game);
         Player player = game.getPlayer();
         map.setCharacter(player, 3, 3);
         game.setMap(map, 0);
@@ -81,12 +78,12 @@ public class GameTest {
         assertThat(game.getPlayer().getX(), is(equalTo(2)));
         assertThat(game.getPlayer().getY(), is(equalTo(4)));
     }
-    
+
     @Test
-    public void aggressiveEnemyMovesTowardsPlayerWhenThereIsSpace(){
-        Enemy enemy = new Enemy("Testi",game.getMap(),5,5);
-        enemy.setBehavior(new AggressiveBehavior(enemy,game.getPlayer()));
-        game.getMap().setCharacter(enemy);
+    public void aggressiveEnemyMovesTowardsPlayerWhenThereIsSpace() {
+        Enemy enemy = new Enemy("Testi");
+        enemy.setBehavior(new AggressiveBehavior(enemy, game.getPlayer()));
+        game.getMap().setCharacter(enemy, 5, 5);
         game.resolveAction(Action.GO_SOUTH);
         assertThat(enemy.getX(), is(equalTo(4)));
         assertThat(enemy.getY(), is(equalTo(4)));

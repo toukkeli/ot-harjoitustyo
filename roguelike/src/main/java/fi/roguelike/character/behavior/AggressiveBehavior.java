@@ -5,7 +5,6 @@
  */
 package fi.roguelike.character.behavior;
 
-import fi.roguelike.character.behavior.Behavior;
 import fi.roguelike.character.Character;
 import java.util.ArrayList;
 import fi.roguelike.map.Tile;
@@ -34,21 +33,21 @@ public class AggressiveBehavior extends Behavior {
         } else if (other != null) {
             return "";
         } else if (this.getCharacter().getMap().getTile(newX, newY) == Tile.WALL) {
-            return getCharacter().getname() + "";
+            return getCharacter().getName() + "";
         } else {
             getCharacter().setX(newX);
             getCharacter().setY(newY);
-            return getCharacter().getname() + " moved";
+            return getCharacter().getName() + " moved";
         }
     }
 
     @Override
     public String attack(Character other) {
         String result;
-        result = getCharacter().getname() + " hits " + other.getname() + " for" + this.getCharacter().getDamage() + " damage.";
+        result = getCharacter().getName() + " hits " + other.getName() + " for" + this.getCharacter().getDamage() + " damage.";
         other.reduceHp(this.getCharacter().getDamage());
         if (other.isDead()) {
-            result = result + " " + other.getname() + " dies.";
+            result = result + " " + other.getName() + " dies.";
             other.die();
         }
         return result;

@@ -1,8 +1,8 @@
-# Roguelike
+﻿# Roguelike
 
 Tämä on ohjelmistotekniikka-kurssin harjoitustyö keväälle 2019.
 
-Harjoitustyön aiheena on yksinkertainen Roguelike-peli. Projekti toteutetaan Javalla.
+Harjoitustyön aiheena on yksinkertainen Roguelike-pelimoottori. Projekti toteutetaan Javalla.
 
 ## Dokumentaatio
 
@@ -10,13 +10,17 @@ Harjoitustyön aiheena on yksinkertainen Roguelike-peli. Projekti toteutetaan Ja
 
 [Vaatimusmäärittely](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[Arkkitehtuurikuvaus](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
+[Arkkitehtuurikuvaus](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 [Työtuntikirjanpito](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+[Testaus](https://github.com/toukkeli/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 ## Releaset
 
 [Viikko 5](https://github.com/toukkeli/ot-harjoitustyo/releases/tag/viikko5)
+[Loppupalautus](https://github.com/toukkeli/ot-harjoitustyo/releases/tag/loppupalautus)
+
 
 ## Komentorivitoiminnot
 
@@ -36,6 +40,7 @@ mvn jacoco:report
 
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto _target/site/jacoco/index.html_
 
+
 ### Suoritettavan jarin generointi
 
 Komento
@@ -44,4 +49,24 @@ Komento
 mvn package
 ```
 
-generoi hakemistoon _target_ suoritettavan jar-tiedoston _roguelike-1.0-SNAPSHOT.jar_
+generoi hakemistoon _target_ suoritettavan jar-tiedoston _rogelike-1.0-SNAPSHOT.jar_
+
+### JavaDoc
+
+JavaDoc generoidaan komennolla
+
+```
+mvn javadoc:javadoc
+```
+
+JavaDocia voi tarkastella avaamalla selaimella tiedosto _target/site/apidocs/index.html_
+
+### Checkstyle
+
+Tiedoston .checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
+
+```
+ mvn jxr:jxr checkstyle:checkstyle
+```
+
+Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto _target/site/checkstyle.html_

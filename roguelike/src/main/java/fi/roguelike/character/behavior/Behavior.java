@@ -6,7 +6,6 @@
 package fi.roguelike.character.behavior;
 
 import fi.roguelike.character.Character;
-import java.util.ArrayList;
 
 /**
  *
@@ -14,7 +13,7 @@ import java.util.ArrayList;
  */
 public abstract class Behavior {
 
-    private Character character;
+    private final Character character;
 
     public Behavior(Character c) {
         this.character = c;

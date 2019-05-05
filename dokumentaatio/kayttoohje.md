@@ -1,17 +1,16 @@
-# Käyttöohje
+﻿# Käyttöohje
 
-Lataa tiedosto [roguelike-release1.jar](https://github.com/toukkeli/ot-harjoitustyo/releases/tag/viikko5)
+Lataa tiedosto [roguelike-release1.jar](https://github.com/toukkeli/ot-harjoitustyo/releases/tag/loppupalautus) sekä sen yhteydessä oleva tietokanta enemies.db jonka täytyy olla samassa kansiossa kuin .jar -tiedoston.
+
 
 ## Ohjelman käynnistäminen
 
 Ohjelma käynnistetään komennolla 
 
 ```
-java -jar roguelike-release1.jar
+java -jar roguelike-finalrelease.jar
 ```
 
 ## Pelin pelaaminen
 
-- Käyttäjä antaa ensin hahmon nimen kirjoittamalla sen ja painamalla ENTER.
-- Tämän jälkeen peliä pelataan antamalla merkin mittainen syöte sallitusta listasta ja painamalla ENTER.
-- Sallittuja syötteitä ovat numerot 1,2,3,4,6,7,8 ja 9 jotka siirtävät pelaajaa, 5 jolla laskeudutaan portaita ja x jolla lopetetaan peli.
+- Pelaaja kontrolloi pelaajahahmoa Numpadillä (1,2,3,4,5,6,7,8,9). Pelin voi keskeyttää ESC-näppäimellä.

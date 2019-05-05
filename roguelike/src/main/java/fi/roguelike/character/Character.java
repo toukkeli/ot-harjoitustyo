@@ -6,9 +6,12 @@
 package fi.roguelike.character;
 
 import fi.roguelike.map.Map;
-import fi.roguelike.map.Tile;
 
 /**
+ * Abstract class that represents any entity that can walk around the dungeon
+ * Currently has 2 implementations: Player and Enemy, with a potential
+ * implementation for npc
+ *
  *
  * @author toukk
  */
@@ -20,17 +23,13 @@ public abstract class Character {
     private int y;
     private int hp;
     private int damage;
+    private int accuracy;
 
-    public Character(String name, Map map, int x, int y) {
+    public Character(String name) {
         this.name = name;
-        this.map = map;
-        this.x = x;
-        this.y = y;
-        this.hp = 1;
-        this.damage = 1;
     }
 
-    public String getname() {
+    public String getName() {
         return this.name;
     }
 
@@ -70,14 +69,43 @@ public abstract class Character {
         this.hp = hp;
     }
 
+    public int getDamage() {
+        return this.damage;
+    }
+
+    public void setDamage(int damage) {
+        this.damage = damage;
+    }
+
+    public int getAccuracy() {
+        return this.accuracy;
+    }
+
+    public void setAccuracy(int a) {
+        this.accuracy = a;
+    }
+
+    /**
+     * The character takes damage
+     *
+     * @param change How much damage was taken
+     */
     public void reduceHp(int change) {
         this.hp = this.hp - change;
     }
 
+    /**
+     * The character heals hp
+     *
+     * @param change How much hp was healed
+     */
     public void addHp(int change) {
         this.hp = this.hp + change;
     }
 
+    /**
+     * @return True if the characters hp <= 0
+     */
     public boolean isDead() {
         if (this.hp <= 0) {
             return true;
@@ -90,13 +118,5 @@ public abstract class Character {
     abstract public String attack(Character other);
 
     abstract public void die();
-
-    public int getDamage() {
-        return this.damage;
-    }
-
-    public void setDamage() {
-        this.damage = damage;
-    }
 
 }

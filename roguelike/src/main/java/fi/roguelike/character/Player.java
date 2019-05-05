@@ -5,10 +5,8 @@
  */
 package fi.roguelike.character;
 
-import fi.roguelike.Game;
-import fi.roguelike.map.Map;
+import fi.roguelike.game.Game;
 import fi.roguelike.map.Tile;
-import fi.roguelike.character.Character;
 
 /**
  *
@@ -18,14 +16,12 @@ public class Player extends Character {
 
     private Game game;
 
-    public Player(Game game, String name, Map map, int x, int y) {
-        super(name, map, x, y);
-        this.setHp(5);
+    public Player(Game game, String name) {
+        super(name);
         this.game = game;
-    }
-
-    public Player(Map map, int x, int y) {
-        super("Ukko-Pekka", map, x, y);
+        this.setHp(10);
+        this.setDamage(1);
+        this.setAccuracy(90);
     }
 
     private Game getGame() {
@@ -55,10 +51,10 @@ public class Player extends Character {
     @Override
     public String attack(Character other) {
         String result;
-        result = this.getname() + " hits " + other.getname() + " for " + this.getDamage() + " damage.1";
+        result = this.getName() + " hits " + other.getName() + " for " + this.getDamage() + " damage.1";
         other.reduceHp(getDamage());
         if (other.isDead()) {
-            result = result + " " + other.getname() + " dies.";
+            result = result + " " + other.getName() + " dies.";
             other.die();
         }
         return result;
@@ -67,7 +63,7 @@ public class Player extends Character {
     public String moveDown() {
         if (getMap().getTile(getX(), getY()) == Tile.STAIRS) {
             this.getMap().getGame().newFloor();
-            return this.getname() + " descended a floor.";
+            return this.getName() + " descended a floor.";
 
         } else {
             return "There is nothing to go down to.";
@@ -77,6 +73,15 @@ public class Player extends Character {
     @Override
     public void die() {
         this.getGame().gameOver();
+    }
+
+    public String getStats() {
+        String stats = ""
+                + "\n HP: " + this.getHp()
+                + "\n Damage: " + this.getDamage()
+                + "\n Level: " + this.getGame().getFloor()
+                + "\n";
+        return stats;
     }
 
 }

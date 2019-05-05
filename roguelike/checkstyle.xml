@@ -62,7 +62,21 @@
 
         <module name='NoWhitespaceAfter'>
             <property name='tokens' value='BNOT, DEC, DOT, INC, LNOT, UNARY_MINUS, UNARY_PLUS' />
-        </module>
+
+	  <module name="JavadocMethod">
+    		<property name="scope" value="public"/>
+    		<property name="allowMissingParamTags" value="false"/>
+    		<property name="allowMissingPropertyJavadoc" value="true"/>
+    		<property name="allowMissingThrowsTags" value="false"/>
+    		<property name="allowMissingReturnTag" value="false"/>
+    		<property name="allowThrowsTagsForSubclasses" value="true"/>
+  	</module>
+        
+  	<module name="JavadocStyle">
+    		<property name="scope" value="public"/>
+    		<property name="checkEmptyJavadoc" value="true"/>
+  		</module>
+     	</module>
 
         <module name='NoWhitespaceBefore'>
             <property name='tokens' value='SEMI, DOT, POST_DEC, POST_INC' />
@@ -83,6 +97,10 @@
 
     <module name='FileLength'>
         <property name='max' value='500' />
+    </module>
+
+    <module name="SuppressionFilter">
+    	<property name="file" value="skipped_files.xml" />
     </module>
 
 

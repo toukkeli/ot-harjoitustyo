@@ -18,9 +18,9 @@ public class Enemy extends Character {
 
     private Behavior ai;
 
-    public Enemy(String name, Map map, int x, int y) {
-        super(name, map, x, y);
-        this.ai = null; // In the future a default behavior will exist
+    public Enemy(String name) {
+        super(name);
+        this.ai = null;
     }
 
     public Behavior getBehavior() {
